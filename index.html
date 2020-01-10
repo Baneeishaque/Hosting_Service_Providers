@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            .btn{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding bottom: 20px;
+    }
+     
+    .btn{
+        margin: 20px;
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form name="contact-form" action="service_submit.php" method="post" id="contact-form">
+                    <h1 align="center">SERVICE PROVIDER</h1>
+                            <input type="text" class="form-control" name="service_provider_name" id="service_provider_name" placeholder="SERVICE PROVIDER NAME" required>
+                    <h3>SHARED HOSTING PACKAGE</h3>
+                        <div class="form-group">
+                            <label for="Name">DOMAIN</label>
+                                <select class="form-control" name="domain" id="domain" required="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="unlimited">Unlimited</option>
+                                </select>     
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email IDs</label>
+                                    <select class="form-control" name="email_ids" name="email_ids" required="">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="unlimited">Unlimited</option>
+                                    </select> 
+                            </div>  
+
+                            <div class="form-group">
+                                                                 
+                                <div class="row">
+
+                                    <label for="Price" class="form-control" style="border: none;">Price</label>
+                                        <div class="col-md-6">
+
+                                            <input type="text" class="form-control" name="price" placeholder="Price" id="price" required>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <select class="form-control" name="price_select" id="price_select" required="">
+                                              <option value="INR">INR</option>
+                                              <option value="SGD">SGD</option>
+                                              <option value="EUR">EUR</option>
+                                              <option value="SAR">SAR</option>
+                      
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <div class="row">
+                                        <h3>VPS/ DEDICATE/ VOM</h3>
+                                        <label for="1GB" class="form-control" style="border: none;">1GB</label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="one_gb" id="one_gb" placeholder="1GB" required>
+                                        </div>
+
+                                         <div class="col-md-6">
+
+                                            <select class="form-control" name="one_gb_amount_type" id="one_gb_amount_type">
+                                              <option value="INR">INR</option>
+                                              <option value="SGD">SGD</option>
+                                              <option value="EUR">EUR</option>
+                                              <option value="SAR">SAR</option>
+                                            
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="2GB" class="form-control" style="border: none;">2GB</label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="two_gb" id="two_gb" placeholder="2GB" required>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <select class="form-control" name="two_gb_amount_type" id="two_gb_amount_type">
+                                                   <option value="INR">INR</option>
+                                                  <option value="SGD">SGD</option>
+                                                  <option value="EUR">EUR</option>
+                                                  <option value="SAR">SAR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                             
+                             </div>  
+                                
+
+                            <div class="row">
+                          
+                                <h3>DOMAIN</h3>
+                                
+                                <div class="form-group">
+
+                                     <label for="Name" class="form-control" style="border: none;">COM</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="com" placeholder="COM" required>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <select class="form-control" name="com_currency" id="com_currency" required="">
+                                              <option value="INR">INR</option>
+                                              <option value="SGD">SGD</option>
+                                              <option value="EUR">EUR</option>
+                                              <option value="SAR">SAR</option>
+                  
+                                        </select>
+                                    </div>
+                                </div>
+
+                               <hr>
+                           </div>
+                        
+                            <div class="col-md-12">
+                            
+                                 <button type="submit" class="btn btn-success" name="submit" value="Submit" id="submit_form" style="align-content: center;">Submit</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </body>
+    </html>
